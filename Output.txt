@@ -1,0 +1,829 @@
+start
+###############miasto: berlin
+$$$$$$$$$ci퉓 zmiennych nr:1 host_is_superhost + accommodates + bedrooms + beds + bathrooms + zipcode_count + zipcode_price + number_of_reviews + review_scores_rating
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.361
+Model:                            OLS   Adj. R-squared:                  0.361
+Method:                 Least Squares   F-statistic:                     1412.
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:20   Log-Likelihood:            -1.1264e+05
+No. Observations:               22454   AIC:                         2.253e+05
+Df Residuals:                   22444   BIC:                         2.254e+05
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+Intercept                   -38.7783      3.560    -10.894      0.000     -45.755     -31.801
+host_is_superhost[T.True]     6.1452      0.779      7.889      0.000       4.618       7.672
+accommodates                 14.6539      0.282     51.877      0.000      14.100      15.208
+bedrooms                     12.4313      0.515     24.162      0.000      11.423      13.440
+beds                         -2.2039      0.355     -6.213      0.000      -2.899      -1.509
+bathrooms                    13.6095      0.792     17.188      0.000      12.058      15.162
+zipcode_count                 0.0126      0.001     12.495      0.000       0.011       0.015
+zipcode_price                 0.0496      0.004     12.792      0.000       0.042       0.057
+number_of_reviews            -0.0236      0.007     -3.288      0.001      -0.038      -0.010
+review_scores_rating          0.2590      0.036      7.152      0.000       0.188       0.330
+==============================================================================
+Omnibus:                    17412.656   Durbin-Watson:                   1.860
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           725951.798
+Skew:                           3.369   Prob(JB):                         0.00
+Kurtosis:                      30.028   Cond. No.                     6.65e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 6.65e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+###############miasto: berlin
+$$$$$$$$$ci퉓 zmiennych nr:2 accommodates + bedrooms + beds + bathrooms + zipcode_count + zipcode_price + number_of_reviews + review_scores_rating
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.360
+Model:                            OLS   Adj. R-squared:                  0.359
+Method:                 Least Squares   F-statistic:                     1577.
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:20   Log-Likelihood:            -1.1279e+05
+No. Observations:               22479   AIC:                         2.256e+05
+Df Residuals:                   22470   BIC:                         2.257e+05
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+Intercept              -42.7828      3.526    -12.132      0.000     -49.695     -35.871
+accommodates            14.7067      0.283     52.045      0.000      14.153      15.261
+bedrooms                12.4222      0.515     24.127      0.000      11.413      13.431
+beds                    -2.2904      0.355     -6.457      0.000      -2.986      -1.595
+bathrooms               13.7462      0.792     17.352      0.000      12.193      15.299
+zipcode_count            0.0123      0.001     12.176      0.000       0.010       0.014
+zipcode_price            0.0498      0.004     12.826      0.000       0.042       0.057
+number_of_reviews       -0.0032      0.007     -0.470      0.639      -0.016       0.010
+review_scores_rating     0.3058      0.036      8.552      0.000       0.236       0.376
+==============================================================================
+Omnibus:                    17436.228   Durbin-Watson:                   1.862
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           726674.790
+Skew:                           3.370   Prob(JB):                         0.00
+Kurtosis:                      30.026   Cond. No.                     6.58e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 6.58e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+###############miasto: berlin
+$$$$$$$$$ci퉓 zmiennych nr:3 accommodates + bedrooms + beds + bathrooms + zipcode_price
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.353
+Model:                            OLS   Adj. R-squared:                  0.353
+Method:                 Least Squares   F-statistic:                     2455.
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:20   Log-Likelihood:            -1.1290e+05
+No. Observations:               22479   AIC:                         2.258e+05
+Df Residuals:                   22473   BIC:                         2.259e+05
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept        -8.9422      0.932     -9.591      0.000     -10.770      -7.115
+accommodates     14.7502      0.282     52.259      0.000      14.197      15.303
+bedrooms         12.7158      0.516     24.665      0.000      11.705      13.726
+beds             -2.7492      0.355     -7.742      0.000      -3.445      -2.053
+bathrooms        13.7580      0.796     17.287      0.000      12.198      15.318
+zipcode_price     0.0472      0.004     12.115      0.000       0.040       0.055
+==============================================================================
+Omnibus:                    17232.958   Durbin-Watson:                   1.863
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           696445.799
+Skew:                           3.320   Prob(JB):                         0.00
+Kurtosis:                      29.448   Cond. No.                         431.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: berlin
+$$$$$$$$$ci퉓 zmiennych nr:4 accommodates + bedrooms + beds
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.340
+Model:                            OLS   Adj. R-squared:                  0.340
+Method:                 Least Squares   F-statistic:                     3866.
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:20   Log-Likelihood:            -1.1313e+05
+No. Observations:               22479   AIC:                         2.263e+05
+Df Residuals:                   22475   BIC:                         2.263e+05
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept        6.3415      0.553     11.458      0.000       5.257       7.426
+accommodates    14.8908      0.285     52.261      0.000      14.332      15.449
+bedrooms        14.3002      0.512     27.937      0.000      13.297      15.304
+beds            -2.3443      0.358     -6.550      0.000      -3.046      -1.643
+==============================================================================
+Omnibus:                    17449.330   Durbin-Watson:                   1.860
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           699120.774
+Skew:                           3.390   Prob(JB):                         0.00
+Kurtosis:                      29.466   Cond. No.                         10.1
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: berlin
+$$$$$$$$$ci퉓 zmiennych nr:5 accommodates + bedrooms
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.339
+Model:                            OLS   Adj. R-squared:                  0.339
+Method:                 Least Squares   F-statistic:                     5767.
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:20   Log-Likelihood:            -1.1315e+05
+No. Observations:               22479   AIC:                         2.263e+05
+Df Residuals:                   22476   BIC:                         2.263e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept        6.7058      0.551     12.166      0.000       5.625       7.786
+accommodates    13.6532      0.213     63.956      0.000      13.235      14.072
+bedrooms        13.5245      0.498     27.133      0.000      12.548      14.502
+==============================================================================
+Omnibus:                    17481.198   Durbin-Watson:                   1.858
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           712607.245
+Skew:                           3.393   Prob(JB):                         0.00
+Kurtosis:                      29.735   Cond. No.                         8.55
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: berlin
+$$$$$$$$$ci퉓 zmiennych nr:6 bedrooms + beds
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.260
+Model:                            OLS   Adj. R-squared:                  0.260
+Method:                 Least Squares   F-statistic:                     3953.
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:20   Log-Likelihood:            -1.1441e+05
+No. Observations:               22479   AIC:                         2.288e+05
+Df Residuals:                   22476   BIC:                         2.289e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     16.0750      0.552     29.125      0.000      14.993      17.157
+bedrooms      22.4074      0.517     43.376      0.000      21.395      23.420
+beds          10.0583      0.284     35.454      0.000       9.502      10.614
+==============================================================================
+Omnibus:                    17308.518   Durbin-Watson:                   1.856
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           658746.401
+Skew:                           3.366   Prob(JB):                         0.00
+Kurtosis:                      28.651   Cond. No.                         6.42
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: berlin
+$$$$$$$$$ci퉓 zmiennych nr:7 accommodates + beds
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.317
+Model:                            OLS   Adj. R-squared:                  0.317
+Method:                 Least Squares   F-statistic:                     5227.
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:20   Log-Likelihood:            -1.1351e+05
+No. Observations:               22479   AIC:                         2.270e+05
+Df Residuals:                   22476   BIC:                         2.270e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept       12.8235      0.511     25.089      0.000      11.822      13.825
+accommodates    17.3031      0.276     62.647      0.000      16.762      17.845
+beds            -0.0313      0.354     -0.088      0.930      -0.725       0.663
+==============================================================================
+Omnibus:                    17531.888   Durbin-Watson:                   1.860
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           720336.707
+Skew:                           3.405   Prob(JB):                         0.00
+Kurtosis:                      29.883   Cond. No.                         7.90
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: berlin
+$$$$$$$$$ci퉓 zmiennych nr:8 accommodates + zipcode_price
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.322
+Model:                            OLS   Adj. R-squared:                  0.322
+Method:                 Least Squares   F-statistic:                     5327.
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:20   Log-Likelihood:            -1.1344e+05
+No. Observations:               22479   AIC:                         2.269e+05
+Df Residuals:                   22476   BIC:                         2.269e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept         9.9552      0.566     17.596      0.000       8.846      11.064
+accommodates     17.2009      0.169    101.975      0.000      16.870      17.532
+zipcode_price     0.0466      0.004     11.670      0.000       0.039       0.054
+==============================================================================
+Omnibus:                    17505.856   Durbin-Watson:                   1.861
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           724319.398
+Skew:                           3.395   Prob(JB):                         0.00
+Kurtosis:                      29.967   Cond. No.                         212.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: berlin
+$$$$$$$$$ci퉓 zmiennych nr:9 accommodates + beds + zipcode_price
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.322
+Model:                            OLS   Adj. R-squared:                  0.321
+Method:                 Least Squares   F-statistic:                     3551.
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:20   Log-Likelihood:            -1.1344e+05
+No. Observations:               22479   AIC:                         2.269e+05
+Df Residuals:                   22475   BIC:                         2.269e+05
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept         9.9548      0.566     17.595      0.000       8.846      11.064
+accommodates     17.2305      0.275     62.556      0.000      16.691      17.770
+beds             -0.0479      0.353     -0.136      0.892      -0.740       0.644
+zipcode_price     0.0466      0.004     11.670      0.000       0.039       0.054
+==============================================================================
+Omnibus:                    17505.452   Durbin-Watson:                   1.861
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           724046.091
+Skew:                           3.395   Prob(JB):                         0.00
+Kurtosis:                      29.962   Cond. No.                         213.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: monachium
+$$$$$$$$$ci퉓 zmiennych nr:10 host_is_superhost + accommodates + bedrooms + beds + bathrooms + zipcode_count + zipcode_price + number_of_reviews + review_scores_rating
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.197
+Model:                            OLS   Adj. R-squared:                  0.196
+Method:                 Least Squares   F-statistic:                     310.5
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:21   Log-Likelihood:                -67766.
+No. Observations:               11431   AIC:                         1.356e+05
+Df Residuals:                   11421   BIC:                         1.356e+05
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+Intercept                   -53.1282     12.617     -4.211      0.000     -77.860     -28.397
+host_is_superhost[T.True]   -10.5944      2.723     -3.891      0.000     -15.932      -5.257
+accommodates                 26.9696      0.835     32.293      0.000      25.333      28.607
+bedrooms                      7.4272      1.754      4.233      0.000       3.988      10.866
+beds                         -2.6401      1.124     -2.349      0.019      -4.843      -0.437
+bathrooms                     0.7784      2.614      0.298      0.766      -4.345       5.902
+zipcode_count                 0.0007      0.001      1.159      0.246      -0.000       0.002
+zipcode_price                 0.6150      0.040     15.445      0.000       0.537       0.693
+number_of_reviews            -0.2573      0.022    -11.458      0.000      -0.301      -0.213
+review_scores_rating          0.2284      0.122      1.873      0.061      -0.011       0.467
+==============================================================================
+Omnibus:                     8734.391   Durbin-Watson:                   1.775
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           261740.179
+Skew:                           3.410   Prob(JB):                         0.00
+Kurtosis:                      25.428   Cond. No.                     2.90e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.9e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+###############miasto: monachium
+$$$$$$$$$ci퉓 zmiennych nr:11 accommodates + bedrooms + beds + bathrooms + zipcode_count + zipcode_price + number_of_reviews + review_scores_rating
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.195
+Model:                            OLS   Adj. R-squared:                  0.195
+Method:                 Least Squares   F-statistic:                     347.0
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:21   Log-Likelihood:                -67910.
+No. Observations:               11454   AIC:                         1.358e+05
+Df Residuals:                   11445   BIC:                         1.359e+05
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+Intercept              -48.9160     12.575     -3.890      0.000     -73.565     -24.267
+accommodates            27.0055      0.835     32.355      0.000      25.369      28.642
+bedrooms                 7.3327      1.754      4.179      0.000       3.894      10.772
+beds                    -2.6118      1.124     -2.323      0.020      -4.815      -0.408
+bathrooms                0.5061      2.612      0.194      0.846      -4.614       5.626
+zipcode_count            0.0007      0.001      1.173      0.241      -0.000       0.002
+zipcode_price            0.6188      0.040     15.557      0.000       0.541       0.697
+number_of_reviews       -0.2858      0.021    -13.387      0.000      -0.328      -0.244
+review_scores_rating     0.1727      0.121      1.426      0.154      -0.065       0.410
+==============================================================================
+Omnibus:                     8744.205   Durbin-Watson:                   1.775
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           260839.312
+Skew:                           3.407   Prob(JB):                         0.00
+Kurtosis:                      25.363   Cond. No.                     2.89e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.89e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+###############miasto: monachium
+$$$$$$$$$ci퉓 zmiennych nr:12 accommodates + bedrooms + beds + bathrooms + zipcode_price
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.182
+Model:                            OLS   Adj. R-squared:                  0.181
+Method:                 Least Squares   F-statistic:                     508.0
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:21   Log-Likelihood:                -68007.
+No. Observations:               11454   AIC:                         1.360e+05
+Df Residuals:                   11448   BIC:                         1.361e+05
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept       -40.9580      5.148     -7.956      0.000     -51.049     -30.867
+accommodates     26.6629      0.840     31.743      0.000      25.016      28.309
+bedrooms          7.7581      1.764      4.398      0.000       4.301      11.216
+beds             -3.0964      1.132     -2.736      0.006      -5.315      -0.878
+bathrooms         1.2361      2.633      0.469      0.639      -3.925       6.397
+zipcode_price     0.6642      0.037     18.022      0.000       0.592       0.736
+==============================================================================
+Omnibus:                     8736.604   Durbin-Watson:                   1.771
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           255475.527
+Skew:                           3.411   Prob(JB):                         0.00
+Kurtosis:                      25.108   Cond. No.                         735.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: monachium
+$$$$$$$$$ci퉓 zmiennych nr:13 accommodates + bedrooms + beds
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.158
+Model:                            OLS   Adj. R-squared:                  0.158
+Method:                 Least Squares   F-statistic:                     717.9
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:21   Log-Likelihood:                -68167.
+No. Observations:               11454   AIC:                         1.363e+05
+Df Residuals:                   11450   BIC:                         1.364e+05
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept       36.8951      1.891     19.510      0.000      33.188      40.602
+accommodates    27.1948      0.845     32.176      0.000      25.538      28.852
+bedrooms         7.3463      1.722      4.266      0.000       3.971      10.722
+beds            -3.2369      1.121     -2.887      0.004      -5.435      -1.039
+==============================================================================
+Omnibus:                     8826.459   Durbin-Watson:                   1.755
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           261726.769
+Skew:                           3.460   Prob(JB):                         0.00
+Kurtosis:                      25.372   Cond. No.                         9.42
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: monachium
+$$$$$$$$$ci퉓 zmiennych nr:14 accommodates + bedrooms
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.158
+Model:                            OLS   Adj. R-squared:                  0.158
+Method:                 Least Squares   F-statistic:                     1072.
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:21   Log-Likelihood:                -68171.
+No. Observations:               11454   AIC:                         1.363e+05
+Df Residuals:                   11451   BIC:                         1.364e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept       37.7047      1.871     20.154      0.000      34.038      41.372
+accommodates    25.9568      0.729     35.627      0.000      24.529      27.385
+bedrooms         5.0921      1.535      3.316      0.001       2.082       8.102
+==============================================================================
+Omnibus:                     8776.200   Durbin-Watson:                   1.755
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           259619.379
+Skew:                           3.430   Prob(JB):                         0.00
+Kurtosis:                      25.292   Cond. No.                         7.70
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: monachium
+$$$$$$$$$ci퉓 zmiennych nr:15 bedrooms + beds
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.082
+Model:                            OLS   Adj. R-squared:                  0.082
+Method:                 Least Squares   F-statistic:                     512.8
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):          4.90e-214
+Time:                        11:53:21   Log-Likelihood:                -68663.
+No. Observations:               11454   AIC:                         1.373e+05
+Df Residuals:                   11451   BIC:                         1.374e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     68.1511      1.694     40.225      0.000      64.830      71.472
+bedrooms      19.3678      1.755     11.033      0.000      15.927      22.809
+beds          15.0659      1.009     14.934      0.000      13.088      17.043
+==============================================================================
+Omnibus:                     8510.376   Durbin-Watson:                   1.766
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           267549.272
+Skew:                           3.246   Prob(JB):                         0.00
+Kurtosis:                      25.770   Cond. No.                         5.75
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: monachium
+$$$$$$$$$ci퉓 zmiennych nr:16 accommodates + beds
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.157
+Model:                            OLS   Adj. R-squared:                  0.157
+Method:                 Least Squares   F-statistic:                     1066.
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:21   Log-Likelihood:                -68176.
+No. Observations:               11454   AIC:                         1.364e+05
+Df Residuals:                   11451   BIC:                         1.364e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept       39.4761      1.793     22.016      0.000      35.961      42.991
+accommodates    27.9770      0.826     33.883      0.000      26.359      29.596
+beds            -1.0684      1.000     -1.068      0.285      -3.029       0.892
+==============================================================================
+Omnibus:                     8810.399   Durbin-Watson:                   1.758
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           258720.561
+Skew:                           3.454   Prob(JB):                         0.00
+Kurtosis:                      25.235   Cond. No.                         7.83
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: monachium
+$$$$$$$$$ci퉓 zmiennych nr:17 accommodates + zipcode_price
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.180
+Model:                            OLS   Adj. R-squared:                  0.180
+Method:                 Least Squares   F-statistic:                     1256.
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:21   Log-Likelihood:                -68018.
+No. Observations:               11454   AIC:                         1.360e+05
+Df Residuals:                   11451   BIC:                         1.361e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept       -36.7667      4.603     -7.988      0.000     -45.789     -27.745
+accommodates     27.1068      0.585     46.354      0.000      25.961      28.253
+zipcode_price     0.6615      0.037     17.944      0.000       0.589       0.734
+==============================================================================
+Omnibus:                     8707.840   Durbin-Watson:                   1.774
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           251686.052
+Skew:                           3.398   Prob(JB):                         0.00
+Kurtosis:                      24.936   Cond. No.                         637.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: monachium
+$$$$$$$$$ci퉓 zmiennych nr:18 accommodates + beds + zipcode_price
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.180
+Model:                            OLS   Adj. R-squared:                  0.180
+Method:                 Least Squares   F-statistic:                     837.7
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):               0.00
+Time:                        11:53:21   Log-Likelihood:                -68018.
+No. Observations:               11454   AIC:                         1.360e+05
+Df Residuals:                   11450   BIC:                         1.361e+05
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept       -36.7037      4.604     -7.972      0.000     -45.728     -27.679
+accommodates     27.4691      0.815     33.710      0.000      25.872      29.066
+beds             -0.6298      0.987     -0.638      0.523      -2.564       1.304
+zipcode_price     0.6609      0.037     17.922      0.000       0.589       0.733
+==============================================================================
+Omnibus:                     8718.419   Durbin-Watson:                   1.774
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           252084.700
+Skew:                           3.405   Prob(JB):                         0.00
+Kurtosis:                      24.951   Cond. No.                         637.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: praga
+$$$$$$$$$ci퉓 zmiennych nr:19 host_is_superhost + accommodates + bedrooms + beds + bathrooms + zipcode_count + zipcode_price + number_of_reviews + review_scores_rating
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.064
+Model:                            OLS   Adj. R-squared:                  0.063
+Method:                 Least Squares   F-statistic:                     106.1
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):          4.31e-193
+Time:                        11:53:21   Log-Likelihood:            -1.3907e+05
+No. Observations:               14042   AIC:                         2.782e+05
+Df Residuals:                   14032   BIC:                         2.782e+05
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+Intercept                 -1628.7114    632.010     -2.577      0.010   -2867.534    -389.888
+host_is_superhost[T.True]   137.7548     95.400      1.444      0.149     -49.242     324.752
+accommodates                267.3191     27.485      9.726      0.000     213.445     321.193
+bedrooms                    263.1521     52.108      5.050      0.000     161.014     365.290
+beds                          8.1975     24.509      0.334      0.738     -39.844      56.239
+bathrooms                    18.6419     57.642      0.323      0.746     -94.344     131.627
+zipcode_count                 0.2244      0.035      6.443      0.000       0.156       0.293
+zipcode_price                 0.3410      0.028     12.223      0.000       0.286       0.396
+number_of_reviews            -7.8691      0.601    -13.089      0.000      -9.048      -6.691
+review_scores_rating         16.7659      6.598      2.541      0.011       3.834      29.698
+==============================================================================
+Omnibus:                    24546.320   Durbin-Watson:                   1.515
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         37679863.437
+Skew:                          12.271   Prob(JB):                         0.00
+Kurtosis:                     255.584   Cond. No.                     6.04e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 6.04e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+###############miasto: praga
+$$$$$$$$$ci퉓 zmiennych nr:20 accommodates + bedrooms + beds + bathrooms + zipcode_count + zipcode_price + number_of_reviews + review_scores_rating
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.064
+Model:                            OLS   Adj. R-squared:                  0.063
+Method:                 Least Squares   F-statistic:                     120.4
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):          8.34e-196
+Time:                        11:53:21   Log-Likelihood:            -1.4002e+05
+No. Observations:               14141   AIC:                         2.801e+05
+Df Residuals:                   14132   BIC:                         2.801e+05
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+Intercept            -1896.5048    605.669     -3.131      0.002   -3083.695    -709.315
+accommodates           266.2584     27.375      9.726      0.000     212.600     319.916
+bedrooms               265.4837     51.901      5.115      0.000     163.751     367.216
+beds                     8.0112     24.410      0.328      0.743     -39.836      55.858
+bathrooms               21.5039     57.373      0.375      0.708     -90.954     133.962
+zipcode_count            0.2256      0.035      6.512      0.000       0.158       0.293
+zipcode_price            0.3421      0.028     12.345      0.000       0.288       0.396
+number_of_reviews       -7.6761      0.583    -13.160      0.000      -8.819      -6.533
+review_scores_rating    19.8968      6.262      3.177      0.001       7.622      32.171
+==============================================================================
+Omnibus:                    24716.473   Durbin-Watson:                   1.516
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         38012901.061
+Skew:                          12.267   Prob(JB):                         0.00
+Kurtosis:                     255.811   Cond. No.                     5.81e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 5.81e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+###############miasto: praga
+$$$$$$$$$ci퉓 zmiennych nr:21 accommodates + bedrooms + beds + bathrooms + zipcode_price
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.051
+Model:                            OLS   Adj. R-squared:                  0.050
+Method:                 Least Squares   F-statistic:                     151.0
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):          9.42e-157
+Time:                        11:53:21   Log-Likelihood:            -1.4011e+05
+No. Observations:               14141   AIC:                         2.802e+05
+Df Residuals:                   14135   BIC:                         2.803e+05
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept      -129.4378    118.822     -1.089      0.276    -362.345     103.470
+accommodates    272.4853     27.254      9.998      0.000     219.064     325.907
+bedrooms        279.4354     52.225      5.351      0.000     177.068     381.803
+beds             13.6117     24.434      0.557      0.577     -34.281      61.505
+bathrooms        14.7870     57.760      0.256      0.798     -98.431     128.005
+zipcode_price     0.3584      0.026     13.624      0.000       0.307       0.410
+==============================================================================
+Omnibus:                    24581.064   Durbin-Watson:                   1.503
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         36559875.123
+Skew:                          12.133   Prob(JB):                         0.00
+Kurtosis:                     250.912   Cond. No.                     1.04e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.04e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+###############miasto: praga
+$$$$$$$$$ci퉓 zmiennych nr:22 accommodates + bedrooms + beds
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.038
+Model:                            OLS   Adj. R-squared:                  0.038
+Method:                 Least Squares   F-statistic:                     187.4
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):          3.64e-119
+Time:                        11:53:21   Log-Likelihood:            -1.4021e+05
+No. Observations:               14141   AIC:                         2.804e+05
+Df Residuals:                   14137   BIC:                         2.805e+05
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept      873.2875     80.954     10.787      0.000     714.607    1031.968
+accommodates   319.0627     27.200     11.730      0.000     265.747     372.378
+bedrooms       271.5359     51.748      5.247      0.000     170.104     372.968
+beds            -2.9703     23.777     -0.125      0.901     -49.577      43.636
+==============================================================================
+Omnibus:                    24455.283   Durbin-Watson:                   1.499
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         35029822.887
+Skew:                          12.012   Prob(JB):                         0.00
+Kurtosis:                     245.642   Cond. No.                         12.2
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: praga
+$$$$$$$$$ci퉓 zmiennych nr:23 accommodates + bedrooms
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.038
+Model:                            OLS   Adj. R-squared:                  0.038
+Method:                 Least Squares   F-statistic:                     281.1
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):          1.94e-120
+Time:                        11:53:21   Log-Likelihood:            -1.4021e+05
+No. Observations:               14141   AIC:                         2.804e+05
+Df Residuals:                   14138   BIC:                         2.804e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept      874.7753     80.070     10.925      0.000     717.827    1031.724
+accommodates   317.0839     22.111     14.341      0.000     273.743     360.424
+bedrooms       270.3258     50.831      5.318      0.000     170.690     369.962
+==============================================================================
+Omnibus:                    24454.563   Durbin-Watson:                   1.499
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         35026432.222
+Skew:                          12.012   Prob(JB):                         0.00
+Kurtosis:                     245.630   Cond. No.                         9.85
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: praga
+$$$$$$$$$ci퉓 zmiennych nr:24 bedrooms + beds
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.029
+Model:                            OLS   Adj. R-squared:                  0.029
+Method:                 Least Squares   F-statistic:                     210.3
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):           1.05e-90
+Time:                        11:53:21   Log-Likelihood:            -1.4028e+05
+No. Observations:               14141   AIC:                         2.806e+05
+Df Residuals:                   14138   BIC:                         2.806e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept   1394.6266     67.989     20.513      0.000    1261.359    1527.894
+bedrooms     515.8032     47.601     10.836      0.000     422.498     609.108
+beds         159.4558     19.422      8.210      0.000     121.385     197.526
+==============================================================================
+Omnibus:                    24309.601   Durbin-Watson:                   1.501
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         34062893.840
+Skew:                          11.863   Prob(JB):                         0.00
+Kurtosis:                     242.266   Cond. No.                         7.20
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: praga
+$$$$$$$$$ci퉓 zmiennych nr:25 accommodates + beds
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.036
+Model:                            OLS   Adj. R-squared:                  0.036
+Method:                 Least Squares   F-statistic:                     266.8
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):          1.81e-114
+Time:                        11:53:21   Log-Likelihood:            -1.4022e+05
+No. Observations:               14141   AIC:                         2.804e+05
+Df Residuals:                   14138   BIC:                         2.805e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept      934.0610     80.196     11.647      0.000     776.866    1091.257
+accommodates   376.4972     24.924     15.106      0.000     327.643     425.351
+beds            20.3837     23.379      0.872      0.383     -25.442      66.209
+==============================================================================
+Omnibus:                    24433.948   Durbin-Watson:                   1.501
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         34803869.574
+Skew:                          11.992   Prob(JB):                         0.00
+Kurtosis:                     244.855   Cond. No.                         11.7
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+###############miasto: praga
+$$$$$$$$$ci퉓 zmiennych nr:26 accommodates + zipcode_price
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.048
+Model:                            OLS   Adj. R-squared:                  0.048
+Method:                 Least Squares   F-statistic:                     360.3
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):          2.39e-153
+Time:                        11:53:21   Log-Likelihood:            -1.4013e+05
+No. Observations:               14141   AIC:                         2.803e+05
+Df Residuals:                   14138   BIC:                         2.803e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept       -57.3772    107.661     -0.533      0.594    -268.408     153.653
+accommodates    363.0023     17.032     21.313      0.000     329.618     396.387
+zipcode_price     0.3535      0.026     13.452      0.000       0.302       0.405
+==============================================================================
+Omnibus:                    24565.926   Durbin-Watson:                   1.505
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         36329217.284
+Skew:                          12.119   Prob(JB):                         0.00
+Kurtosis:                     250.124   Cond. No.                     9.20e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 9.2e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+###############miasto: praga
+$$$$$$$$$ci퉓 zmiennych nr:27 accommodates + beds + zipcode_price
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.049
+Model:                            OLS   Adj. R-squared:                  0.048
+Method:                 Least Squares   F-statistic:                     241.2
+Date:                Sat, 12 Dec 2020   Prob (F-statistic):          1.24e-152
+Time:                        11:53:21   Log-Likelihood:            -1.4013e+05
+No. Observations:               14141   AIC:                         2.803e+05
+Df Residuals:                   14137   BIC:                         2.803e+05
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept       -48.1164    107.794     -0.446      0.655    -259.407     163.174
+accommodates    332.1436     24.981     13.296      0.000     283.178     381.110
+beds             39.2942     23.272      1.688      0.091      -6.321      84.910
+zipcode_price     0.3562      0.026     13.530      0.000       0.305       0.408
+==============================================================================
+Omnibus:                    24557.586   Durbin-Watson:                   1.505
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         36301007.661
+Skew:                          12.110   Prob(JB):                         0.00
+Kurtosis:                     250.029   Cond. No.                     9.22e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 9.22e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
